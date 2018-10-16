@@ -1,8 +1,7 @@
 <template>
 <section class="container">
-  <a href="/users">Users a</a>
-  <!-- <router-link to=""></router-link> -->
   <nuxt-link to="/users">Users nuxt</nuxt-link>
+  <button @click="navProducts">products</button>
 </section>
 </template>
 
@@ -12,6 +11,16 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    navProducts() {
+      this.$router.push('/products')
+    }
   }
 }
 </script>
